@@ -1,298 +1,87 @@
-<!doctype html>
 <html lang="id">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Me - Meysa Cahya Noviana</title>
-
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        background-color: #f5f5f5;
-        color: #333;
-      }
-
-      header {
-        background-color: white;
-        padding: 30px;
-        text-align: center;
-      }
-
-      h1 {
-        margin-bottom: 15px;
-      }
-
-      nav {
-        margin-top: 15px;
-      }
-
-      nav a {
-        text-decoration: none;
-        color: #333;
-        margin: 0 10px;
-      }
-
-      nav a:hover {
-        color: #777;
-      }
-
-      .container {
-        width: 85%;
-        margin: 30px auto;
-      }
-
-      section {
-        background-color: white;
-        padding: 25px;
-        margin-bottom: 25px;
-        border-radius: 12px;
-      }
-
-      h2 {
-        margin-bottom: 15px;
-      }
-
-      /* TABEL DATA DIRI */
-      table {
-        width: 100%;
-        border-collapse: collapse;
-      }
-
-      th,
-      td {
-        padding: 12px;
-        border: 1px solid #ddd;
-        text-align: left;
-      }
-
-      th {
-        background-color: #eeeeee;
-      }
-
-      /* KATALOG HOBI */
-      .hobi-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-      }
-
-      .hobi-card {
-        border: 1px solid #ddd;
-        border-radius: 12px;
-        overflow: hidden;
-        background-color: white;
-        transition: 0.3s;
-      }
-
-      .hobi-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-      }
-
-      .hobi-card img {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-      }
-
-      .hobi-info {
-        padding: 18px;
-      }
-
-      .hobi-info h3 {
-        margin-top: 0;
-      }
-
-      .hobi-info p {
-        color: #666;
-        line-height: 1.5;
-      }
-
-      /* PENDIDIKAN */
-      .pendidikan li {
-        margin-bottom: 10px;
-      }
-
-      footer {
-        text-align: center;
-        background-color: #222;
-        color: white;
-        padding: 20px;
-      }
-
-      /* RESPONSIVE */
-      @media (max-width: 600px) {
-        .hobi-container {
-          grid-template-columns: 1fr;
-        }
-
-        .container {
-          width: 90%;
-        }
-      }
-    </style>
+    <title>personal website</title>
   </head>
-
   <body>
-    <!-- HEADER -->
-    <header>
-      <h1>About Me</h1>
+    <!-- Konten halaman ditulis di dalam body -->
+    <h1>My Project</h1>
+    <nav>
+      <a href="index.html">Home</a> | <a href="About.html">About</a> |
+      <a href="Project.html">Project</a>| <a href="Contact.html">Contact</a>
+    </nav>
+    <hr />
+    <h2>Daftar Project</h2>
+    <p>
+      Berikut adalah beberapa projek sederhana yang pernah atau sedang saya
+      kerjakan.
+    </p>
+    <img src="assets/tampilan web.jpg" alt="tampilan" width="200" />
+    <img src="assets/Game.jpeg" alt="tampilan" width="400" />
+    <h2>Project 1: Website kriptografi</h2>
+    <p>
+      website sederhana untuk melakukan percobaan tentang kriptografi metode
+      Caesar chiper
+    </p>
+    <p>
+      Repository :
+      <a href="https://kriptograpi-caesar.vercel.app/"> Lihat Website</a>
+    </p>
 
-      <nav>
-        <a href="index.html">Home</a> | <a href="About.html">About</a> |
-        <a href="Project.html">Project</a> |
-        <a href="Contact.html">Contact</a>
-      </nav>
-    </header>
+    <h2>Project 2 : Website biodata pribadi</h2>
+    <p>Website sederhana yang memberikan informasi terkait data pribadi</p>
 
-    <div class="container">
-      <!-- PROFIL -->
-      <section>
-        <h2>Profil Singkat</h2>
+    <h2>Project 3 : Game edukasi</h2>
+    <p>
+      Game edukasi untuk anak sd tentang matematika dasar pengetahuan tentang
+      hewan dan bahasa indonesia
+    </p>
+    <p>
+      Repository :
+      <a href="https://github.com/ceceaj/Project-UAS-2B"> Lihat di Github</a>
+    </p>
 
-        <p>
-          Nama saya <strong>Meysa Cahya Noviana.</strong>
-          Saya adalah mahasiswa Program Studi Pendidikan Sistem dan Teknologi
-          Informasi yang memiliki ketertarikan di bidang web dan teknologi
-          informasi.
-        </p>
-
-        <p>
-          Saya mulai belajar membuat website dari HTML dasar.
-          <br />
-          Target saya adalah dapat membuat website yang bermanfaat dan mudah
-          digunakan.
-        </p>
-      </section>
-
-      <!-- DATA DIRI -->
-      <section>
-        <h2>Data Diri</h2>
-
-        <table>
-          <tr>
-            <th>Data</th>
-            <th>Keterangan</th>
-          </tr>
-
-          <tr>
-            <td>Nama</td>
-            <td>Meysa Cahya Noviana</td>
-          </tr>
-
-          <tr>
-            <td>NIM</td>
-            <td>2506073</td>
-          </tr>
-
-          <tr>
-            <td>Program Studi</td>
-            <td>Pendidikan Sistem dan Teknologi Informasi</td>
-          </tr>
-
-          <tr>
-            <td>Semester</td>
-            <td>3</td>
-          </tr>
-
-          <tr>
-            <td>Email</td>
-            <td>
-              <a href="mailto:Meysacahya923@gmail.com">
-                Meysacahya923@gmail.com
-              </a>
-            </td>
-          </tr>
-        </table>
-      </section>
-
-      <!-- HOBI -->
-      <section>
-        <h2>Hobi Saya</h2>
-
-        <div class="hobi-container">
-          <!-- HOBI 1 -->
-          <div class="hobi-card">
-            <img src="assets/programming.jpg" alt="Belajar Pemrograman" />
-
-            <div class="hobi-info">
-              <h3>💻 Belajar Pemrograman</h3>
-
-              <p>
-                Saya suka mempelajari pemrograman dan membuat website
-                menggunakan HTML, CSS, dan teknologi lainnya.
-              </p>
-            </div>
-          </div>
-
-          <!-- HOBI 2 -->
-          <div class="hobi-card">
-            <img src="assets/membuat-kue.jpg" alt="Membuat Kue" />
-
-            <div class="hobi-info">
-              <h3>🍰 Membuat Kue</h3>
-
-              <p>
-                Membuat kue menjadi salah satu kegiatan yang saya lakukan untuk
-                mengisi waktu luang.
-              </p>
-            </div>
-          </div>
-
-          <!-- HOBI 3 -->
-          <div class="hobi-card">
-            <img src="assets/game.jpg" alt="Bermain Game" />
-
-            <div class="hobi-info">
-              <h3>🎮 Bermain Game</h3>
-
-              <p>
-                Bermain game merupakan salah satu hiburan yang saya lakukan di
-                waktu senggang.
-              </p>
-            </div>
-          </div>
-
-          <!-- HOBI 4 -->
-          <div class="hobi-card">
-            <img src="assets/menggambar.jpg" alt="Menggambar" />
-
-            <div class="hobi-info">
-              <h3>🎨 Menggambar</h3>
-
-              <p>
-                Saya juga suka menggambar untuk menyalurkan kreativitas dan
-                membuat berbagai karya.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- RIWAYAT PENDIDIKAN -->
-      <section>
-        <h2>Riwayat Pendidikan</h2>
-
-        <ul class="pendidikan">
-          <li>SDN 3 Cipaisan - 2019</li>
-          <li>SMPN 4 Purwakarta - 2022</li>
-          <li>SMAN 3 Purwakarta - 2025</li>
-          <li>Universitas Pendidikan Indonesia - Sekarang</li>
-        </ul>
-      </section>
-
-      <!-- LINK PROJECT -->
-      <section>
-        <p>
-          <a href="Project.html">Lihat Project saya →</a>
-        </p>
-      </section>
-    </div>
-
-    <!-- FOOTER -->
-    <footer>
-      <p>© 2026 Meysa Cahya Noviana.</p>
-    </footer>
+    <h2>Teknologi yang di gunakan</h2>
+    <ul>
+      <li>HTML</li>
+      <li>Javascript</li>
+      <li>CSS</li>
+      <li>Github</li>
+      <li>Vercel</li>
+      <li>Git</li>
+    </ul>
+    <h2>Ringkasan Project</h2>
+    <table border="1" cellpadding="10">
+      <tr>
+        <th colspan="4">Ringkasan Portofolio Project</th>
+      </tr>
+      <tr>
+        <th rowspan="2">No.</th>
+        <th rowspan="2">Nama Project</th>
+        <th colspan="2">Detail Project</th>
+      </tr>
+      <tr>
+        <th>Teknologi</th>
+        <th>Status</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Website kriptografi</td>
+        <td>HTML, CSS, Javascript, Github & Vercel</td>
+        <td rowspan="3">Selesai</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Website Biodata Pribadi</td>
+        <td>HTML</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Game Edukasi</td>
+        <td>Git</td>
+      </tr>
+    </table>
+    <p>Tertarik Berdiskusi? <a href="contact.html">Hubungi saya</a></p>
+    <hr />
   </body>
 </html>
